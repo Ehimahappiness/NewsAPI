@@ -7,13 +7,16 @@ NewsAPI is a REST API that delivers real-time and historical news headlines from
 ## Step 1: Import Libraries
 
 ```python
+import requests
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy import stats
-import requests
-import os
+from datetime import datetime
+import json
+import warnings
+warnings.filterwarnings('ignore')
 ```
 
 ## Step 2: Data Cleaning and Feature Engineering
@@ -75,22 +78,20 @@ Enables data-driven decisions for:
 
 ### 1. Install requirements
 
-```bash
+```python
 pip install -r requirements.txt
 ```
 
 ### 2. Configure API key
 
-```bash
+```python
 echo "NEWS_API_KEY=4c5acc6d462e409b9ebd8c1f62d3176d" > .env
 ```
 
 ### 3. Run analysis
 
-```bash
-# Run all cells sequentially
-# No terminal command needed - execute cells directly in the notebook
-python news_engagement_analysis.py
+```python
+NewsAPI_Engagement.ipynb
 ```
 
 ## 📈 Visual Output
