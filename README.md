@@ -1,5 +1,7 @@
 # News Article Engagement Analysis
 
+NewsAPI is a REST API that delivers real-time and historical news headlines from global sources in JSON format.
+
 📊 **A/B Testing & Performance Insights** using NewsAPI data
 
 ## Step 1: Import Libraries
@@ -86,6 +88,8 @@ echo "NEWS_API_KEY=4c5acc6d462e409b9ebd8c1f62d3176d" > .env
 ### 3. Run analysis
 
 ```bash
+# Run all cells sequentially
+# No terminal command needed - execute cells directly in the notebook
 python news_engagement_analysis.py
 ```
 
